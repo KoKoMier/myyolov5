@@ -115,19 +115,6 @@ def detect(save_img=False):
                         plot_one_box(xyxy, im0, label=label, color=colors[int(cls)], line_thickness=3)
                         x_center = int((int(xyxy[0]) + int(xyxy[2])) / 2)
                         y_center = int((int(xyxy[1]) + int(xyxy[3])) / 2)
-                        #cv2.line(im0, (0, y_center), (640, y_center), (0, 0, 255), 1)
-                        #cv2.line(im0, (x_center, 0), (x_center, 480), (0, 0, 255), 1)
-                        widew = int(xyxy[2]) - int(xyxy[0])
-                        highh = int(xyxy[3]) - int(xyxy[1])
-                        area = (widew + highh) / 2
-                        now_length = k / area
-                        out_length = now_length * 0.2 + 0.8 * last_length
-                        last_length = out_length
-                        x_length = x_center - 320
-                        x_out = (10 / 106) * x_length * (out_length / 40)
-                        x_r_out = x_out * 0.2 + 0.8 * last_out
-                        last_out = x_r_out
-                        print(x_r_out,out_length)
             print(f'{s}Done. ({t2 - t1:.3f}s)')
 
             # Stream results
