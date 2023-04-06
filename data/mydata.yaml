@@ -1,0 +1,9 @@
+
+train: mydata/images/train  # 128 images 训练数据集
+val: mydata/images/train # 128 images  验证数据集
+
+# number of classes
+nc: 3
+
+# class names
+names: [ 'person','milk','cup']
