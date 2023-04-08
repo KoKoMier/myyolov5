@@ -4,12 +4,12 @@
 
 ## 配置yolov5环境
 ### 安装pytorch
-###cpu
+#### cpu
 如果你没有显卡，那么请安装cpu版本的pytorch
 ```
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
 ```
-###gpu
+#### gpu
 如果你有NVIDIA显卡，那么请安装gpu版本的pytorch，gpu版本的torch有加速的效果，当然安装cpu版本的也能用，不过训练模型的时候，切记，一定要用gpu训练，cpu没法玩，训练的速度很慢很慢，不过推理模型的时候，他们之间的速度差距没那么离谱
 
 首先需要安装cuda和cudnn，具体安装方法请点击 [这里](https://blog.csdn.net/qq_41664447/article/details/126914446)
