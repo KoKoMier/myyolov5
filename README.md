@@ -63,9 +63,10 @@ cd myyolov5/data
 python train.py
 ```
 我设置的训练次数是500次，大概要花几个小时的样子
+训练好的模型路径在myyolov5/runs/train里面
 ## 使用模型方法
 首先使用官方模型推理，看看能不能用
 ```
 python detect.py --weights yolov5s.pt --source 0
 ```
-weights后面的参数是模型的相对路径,source后面可以填摄像头的地址，图片，视频的相对路径,因此在把yolov5s.pt换成你训练好的模型的相对路径能使用了
+weights后面的参数是模型的相对路径,source后面可以填摄像头的地址，图片，视频的相对路径,因此在把yolov5s.pt换成你训练好的模型的相对路径能使用了，推理好的图片或者视频都保留在了myyolov5/runs/detect里面
