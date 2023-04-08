@@ -33,7 +33,7 @@ cd myyolov5
 ```
 然后用pip安装
 ```
-pip install -r requirements.txt -i -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 ```
 要是报错的话，把清华源删除
 ## 修改报错
